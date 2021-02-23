@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lobster', cursive;
+    font-family: 'Sora', sans-serif;
+    
+}
+.ewk_navbar{
+    background-color: rgba(1, 1, 1,0.5) !important;
+} /* el important es para darle mas importancia */
+
+.ewk_navbar div, .ewk_navbar ul{
+    background-color:transparent !important;    
+}
+.ewk_cont_sec_1{
+    padding: 10%;
+}
+.ewk_cont_sec_1_linnk {
+    padding:  5%;
+    
+}
+
+.ewk_cont_sec_1_linnk a {
+    width: 200px;
+}
+.ewk_cont_sec_1 hr {
+    border-top: 1px solid rgba(1,1,1,0.3);
+}
+.ewk_cont_banner_sec_3{
+    height: 200vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imagen/4-transeunte-teatro.jpg);
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.ewk_cont_banner_sec_3 .row{
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    padding: 2%;
+}
+.ewk_cont_img {
+    padding: 5%;
+}
+.ewk_cont_banner_sec_4{
+    height: 75h;
+    color: azure;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imagen/videos.jpeg);
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.ewk_cont_banner_sec_4 .row{
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    padding: 2%;
+}
+.ewk_cont_fouter{
+    background-color: rgba(255,1,1,0.5);
+    padding: 10%;
+    color: aliceblue;
+    margin-top: 100px;
+}
+.ctn-lbl-come {
+    width: 50%;
+    text-align: center;
+}
+.lbl-comentar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 2px 1px rgba(1,1,1,1);
+}
+.ini-button{
+    padding: 12px 30px;
+    border: transparent;
+    background: palevioletred;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+.ini-button1{
+    padding: 12px 30px;
+    border: transparent;
+    background: #36FF33;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+.video {
+    padding: 1%;
+
+}
+
+.seccion-footer{
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.copyright{
+    margin: 0;
+    color: white;
+}
+.ewk_cont_banner_sec_5{
+    height: 75h;
+    color: azure;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imagen/bannerclown.jpg);
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.ewk_cont_banner_sec_5 .row{
+    background-color: rgba(255, 255, 255, 0.308);
+    color: black;
+    padding: 2%;
+}
+
+.ewk_cont_banner_sec_6{
+    height: 75h;
+    color: azure;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imagen/bannercirco.jpg);
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.ewk_cont_banner_sec_6 .row{
+    background-color: rgba(255, 255, 255, 0.308);
+    color: black;
+    padding: 2%;
+}
+.ewk_cont_banner_sec_7{
+    height: 75h;
+    color: azure;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imagen/bannerteatro.jpg);
+    position: relative;
+    padding: 10%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.ewk_cont_banner_sec_7 .row{
+    background-color: rgba(255, 255, 255, 0.308);
+    color: black;
+    padding: 2%;
+}

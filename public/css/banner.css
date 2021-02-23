@@ -1,0 +1,75 @@
+.ewk_cont_banner{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../imagen/portada.jpg");
+}
+.ewk_sombra {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%),-50%;
+    -webkit-transform: translate(-50%,-50%);/* para opera y zafaron */
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    margin: auto;
+
+}
+.ewk_sombra hr {
+    border-top: 1px solid #fff;
+}
+.ewk_sombra h1{
+    font-size: 8wv;
+    margin-bottom: 10px;
+}
+.ewk_sombra p{
+    font-size: 4wv;
+    margin-bottom: 10px;
+}
+.ewk_cont_banner_link {
+    margin: 15px;
+    position: relative;
+}
+.ewk_cont_banner_link a{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 1px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.ewk_cont_banner_link a:hover{
+    background-color: #fff;
+    color: #111
+    /* esta es para el efecto de cambio de color del baner */
+
+}
+.ewk_bammer_link {
+    opacity: 0;
+    animation: ewk_keyframes_aparecer_arriba 1s ;
+    -webkit-animation: ewk_keyframes_aparecer_arriba 1s ;
+    animation-fill-mode: forwards;
+}
+
+.ewk_bammer_link_1{
+    opacity: 0;
+    animation: ewk_keyframes_aparecer_arriba 1s ;
+    -webkit-animation: ewk_keyframes_aparecer_arriba 1s ;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.ewk_bammer_link_2{
+    opacity: 0;
+    animation: ewk_keyframes_aparecer_arriba 1s ;
+    -webkit-animation: ewk_keyframes_aparecer_arriba 1s ;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
