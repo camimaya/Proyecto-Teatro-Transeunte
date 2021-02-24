@@ -3,26 +3,41 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Integrante;
+use App\Http\Controllers\CursoController;
+
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    
+    public function getHome()
     {
-        $this->middleware('auth');
+        return view('Inicio');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
+    public function postHome(Request $request)
     {
-        return view('home');
+        $p = new Integrante;
+        $p->id = $request->id;
+        $p->nombre = $request->nombre;
+        $p->correo = $request->correo;
+        $p->curso = $request->curso;
+        $p->save();
+
+        if($request->curso  == "circo")
+        {
+            return redirect() -> action([CursoController::class, 'getCirco']);
+        }
+        if($request->curso  == "clown")
+        {
+            return redirect() -> action([CursoController::class, 'getClown1']);
+        }
+        if($request->curso  == "teatro")
+        {
+            return redirect() -> action([CursoController::class, 'getTeatro']);
+        }
+        
     }
+
+
 }

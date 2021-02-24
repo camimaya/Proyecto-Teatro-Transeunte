@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CursoController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,19 +15,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
 
-Route::get('/Inicio', function () {
-    return view('Inicio');
-});
+Route::get('/',[HomeController::class, 'getHome']);
+Route::post('/',[HomeController::class, 'postHome']);
 
+Route::get('/cursos/circo', [CursoController::class, 'getCirco']);
+
+Route::get('/cursos/clown1', [CursoController::class, 'getClown1']);
+
+Route::get('/cursos/teatro', [CursoController::class, 'getTeatro']);
 
 Route::get('/logout', function () {
     return 'logout';
 });
 
-Auth::routes();
+/*Route::group(['middleware' => 'auth'], function() {
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/cursos/circo', [CursoController::class, 'getCirco']);
+
+    Route::get('/cursos/clown1', [CursoController::class, 'getClown1']);
+
+    Route::get('/cursos/teatro', [CursoController::class, 'getTeatro']);
+
+});
+*/
+
+
+
+Auth::routes();

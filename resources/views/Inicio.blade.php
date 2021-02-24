@@ -40,7 +40,9 @@
                   </div>
                 </li>
                 <a class="nav-link"  style="color: 	#E9967A;"  href="#">HOME<span class="sr-only">(current)</span></a>
+                @if( Auth::check() )
                 <a class="nav-link"  style="color: 	#E9967A;"  href="/">Cerrar Sesion<span class="sr-only">(current)</span></a>
+                @endif
               </ul>
               
             </div>
@@ -472,15 +474,18 @@ El Colectivo nace en el año 2003 por iniciativa estudiantil universitaria, con 
 
             </div>
 
-            <form action="enviado.html" method="GET" class="formulario">
-
+            <form method='POST' action="{{ url('/') }}"  class="formulario">
+              {{ csrf_field() }}
                 <input type="text" name="nombre" placeholder="Nombre" id="nombre">
                 <input type="text" name="correo" placeholder="Correo electróico" id="correo">
-                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
-                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-                <button type="button" onclick="validarFormulario()" >Enviar</button>
-
-
+          
+                
+                <select class="form-select" id="curso" name="curso" aria-label="Default select example">               
+                  <option value="circo">Circo</option>
+                  <option value="clown">Clown</option>
+                  <option value="teatro">Teatro</option>
+                </select>
+                <button  type="submit">Enviar</button>
             </form>
 
         </div>
@@ -489,10 +494,6 @@ El Colectivo nace en el año 2003 por iniciativa estudiantil universitaria, con 
 
   
     </section>
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="app.js"></script>
